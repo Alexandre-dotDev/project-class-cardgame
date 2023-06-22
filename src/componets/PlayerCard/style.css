@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Press+Start+2P&display=swap');
+
+.player-card{
+    font-family: 'Press Start 2P';
+    color: var(--color-floral-white);
+    font-size: 10px;
+}
