@@ -1,7 +1,7 @@
 import './style.css';
 const PlayerName = (content) => {      
-    return `
-    <article class="player-card">
+    return /*html*/`
+    <article class="score-player">
         <p class="player-name">Player${content}</p>
     </article>    `
 }

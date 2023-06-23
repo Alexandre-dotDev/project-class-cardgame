@@ -1,5 +1,7 @@
 
-.player-card{
+.player-name{
     color: var(--color-floral-white);
     font-size: 1rem;
+    text-align: center;
+    line-height: 20px;
 }

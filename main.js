@@ -6,15 +6,13 @@ import CardGame from "./src/componets/CardGame";
 import CardGameVerso from "./src/componets/CardGameVerso";
 import FlipCard from "./src/componets/FlipCard";
 import BoardGame from "./src/object/BoardGame";
-import BoardPlayerName from "./src/object/BoardPlayerName";
+import ScoreBoard from "./src/object/ScoreBoard";
 
 const $root = document.querySelector("#root");
 const $htmlBoardGame = BoardGame(6);
-const $htmlBoardPlayerName = BoardPlayerName();
+const $htmlScoreBoard = ScoreBoard();
 
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
-$root.insertAdjacentHTML("afterbegin", $htmlBoardPlayerName);
-
+$root.insertAdjacentHTML("beforeend", $htmlScoreBoard + $htmlBoardGame);
 
 const $htmlFlipCard = FlipCard();
 const $htmlCardGameAlura = CardGame();

@@ -5,7 +5,7 @@ import FlipCard from "../../componets/FlipCard";
 const BoardGame = (amountCards) => {
     const $htmlCardGame = FlipCard();
     const $htmlBoardGame = $htmlCardGame.repeat(amountCards);
-    return `
+    return /*html*/ `
         <section class="board-game">
             ${$htmlBoardGame}
         </section>

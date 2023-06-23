@@ -1,10 +1,10 @@
 import "./style.css";
 
 const CardGame = () => {
-  return `
+  return /*html*/`
     <article class="card-game"> 
       <img src="src/img/alura-pixel.png" alt="Logo da Alura">                        
     </article>
-    `;
+  `;
 };
 export default CardGame;
