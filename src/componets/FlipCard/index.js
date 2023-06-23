@@ -15,4 +15,3 @@ const FlipCard = () => {
   return container;
 };
 export default FlipCard;
-sss
