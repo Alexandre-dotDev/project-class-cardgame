@@ -5,29 +5,21 @@ import "./src/styles/elements/base.css";
 import CardGame from "./src/componets/CardGame";
 import PlayerCard from "./src/componets/PlayerCard";
 import CardGameVerso from "./src/componets/CardGameVerso";
+import FlipCard from "./src/componets/FlipCard";
+import BoardGame from "./src/object/BoardGame";
 
 const $root = document.querySelector("#root");
+const $htmlPlayerCards = PlayerCard(1) + PlayerCard(2);
+const $htmlBoardGame = BoardGame(6);
 
-const $htmlPlayerCard1 = PlayerCard(1);
-const $htmlPlayerCard2 = PlayerCard(2);
-$root.insertAdjacentHTML(
-  "afterbegin",
-  $htmlPlayerCard1 +
-    $htmlPlayerCard2
-);
+$root.insertAdjacentHTML("afterbegin", $htmlPlayerCards);
 
+$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
+
+
+const $htmlFlipCard = FlipCard();
 const $htmlCardGameAlura = CardGame();
 const $htmlCardGameVersoJS = CardGameVerso("JS");
 const $htmlCardGameVersoHTML = CardGameVerso("HTML");
 const $htmlCardGameVersoCSS = CardGameVerso("CSS");
 
-
-$root.insertAdjacentHTML(
-  "beforeend",
-  $htmlCardGameAlura +
-    $htmlCardGameAlura +
-    $htmlCardGameAlura +
-    $htmlCardGameAlura +
-    $htmlCardGameAlura +
-    $htmlCardGameAlura
-);

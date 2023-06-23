@@ -6,7 +6,7 @@ const CardGameVerso = (text) => {
   switch (text) {
     case "JS":
       return `
-    <article class="card-game=verso"> 
+    <article class="card-game-verso"> 
       <img src="src/img/logo-javascript.png" alt="Logo do Javascript">                        
     </article>
     `;
