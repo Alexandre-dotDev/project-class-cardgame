@@ -1,0 +1,7 @@
+.score-placar{
+    width: 50px;
+    height: 20px;
+    border: 2px solid var(--color-fiery-rose);
+    background-color: var(--color-floral-white);
+    flex-shrink: 0;
+}
